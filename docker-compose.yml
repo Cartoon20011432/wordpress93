@@ -22,7 +22,7 @@ services:
       - web_network
     volumes:
       - ./wordpress:/var/www/html
-      - ./config/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     ports:
       - 8800:80
     environment:
