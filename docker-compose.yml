@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   db:
-    image: mysql:5.7
+    image: cartoon20011432/db93
     restart: always
     networks:
       - web_network
@@ -16,7 +16,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:5.9.3-php7.4-apache
+    image: cartoon20011432/wordpress93
     restart: always
     networks:
       - web_network
