@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
    db:
-     image: cartoon20011432/wordpress93
+     image: cartoon20011432/db93
      volumes:
        - db_data:/var/lib/mysql
      restart: always
